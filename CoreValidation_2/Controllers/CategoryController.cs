@@ -24,6 +24,10 @@ namespace CoreValidation_2.Controllers
             return View();
         }
 
+        //Server Side Validation : Bilgiler BackEnd'e gönderilir...Ve Validation Back End'de kontrol edilir...
+
+        //Client Side Validation : Bilgiler istemciden ayrılamaz Validation Front End'de kontrol edilir...Bunun icin tek yapmanız gereken şey .Net Core MVC'deki iki kütüphaneyi kullanmaktır...
+
         [HttpPost]
         public IActionResult CreateCategory(CategoryRequestModel category)
         {

@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CoreValidation_2.styles.css" asp-append-version="true" />
+
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script><!--Bu kütüphane sizin jquery kullanmanızı saglar...Bu kütüphaneyi aslında asagıdan kesip buraya almamızın sebebi sayfanın HTML-Css-JavaScript kütüphaneleri yukarıdan asagıya render edilirken eger bu asagıda kalırsa buna ihtiyac kütüphanenin bundan önce render edilip calısmamasından kaynaklanır...-->
+
+    <!--Alttaki iki kütüphane Client Side Validation'in tetiklenebilmesi icin wwwroot klasorunden buraya sürüklenmiştir...Tabii ki bunu yaparken bunların üstüne alttaki jquery'i koymayı unutmayın-->
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </head>
 <body>
     <header>
@@ -41,7 +51,7 @@
             &copy; 2024 - CoreValidation_2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+ 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
